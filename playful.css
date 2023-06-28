@@ -1,0 +1,45 @@
+.playful-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 120px;
+}
+
+.playful-action-aria {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.playful-action-aria a {
+  transition: var(--transition);
+}
+
+.playful-action-aria a:hover {
+  transform: rotate(-15deg);
+}
+
+.playful-action-aria a:nth-child(1) img {
+  width: 110px;
+  border-radius: 10px;
+}
+
+.playful-action-aria a:nth-child(2) img {
+  width: 160px;
+  border-radius: 10px;
+  
+}
+
+
+
+@media (max-width: 768px) {
+  .playful-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .playful-action-aria {
+    justify-content: center;
+  }
+}
